@@ -6,17 +6,20 @@ data = json.load(movies)
 '''year = int(input("oh hey give me a year and ill tell you all the movies that came out after it: "))
 yea = int(input("now give me a year and ill tell you all the movies before it: "))
 ye = int(input("same thing but noe ill tell you all the movies that came out that year"))
-titl = str(input("search for the exact title of a movie: "))'''
-gen = list(input("genre: "))
+titl = str(input("search for the exact title of a movie: "))
 
 for i in range (len(data)):
-    '''if (data[i]['year']) > year:
+    if (data[i]['year']) > year:
         print({data[i]['title']})
     if(data[i]['year']) <  yea:
         print({data[i]['title']})
     if(data[i]['year']) ==  ye:
-        print({data[i]['title']})'''
-    '''if(data[i]['title']) == titl:
-        print({data[i]['title']})'''
-    if(data[i]['genres']) == gen:
         print({data[i]['title']})
+    if(data[i]['title']) == titl:
+        print({data[i]['title']})'''
+
+def genre(x, y):
+    for i in range (len(data)):
+        if x in (data[i]["genres"]) and y in (data[i]["genres"]):
+            print({data[i]['title']})
+genre("Western", "Western")
