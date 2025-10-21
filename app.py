@@ -22,4 +22,4 @@ def genre(x, y):
     for i in range (len(data)):
         if x in (data[i]["genres"]) and y in (data[i]["genres"]):
             print({data[i]['title']})
-genre("Western", "Western")
+genre("Spy", "Comedy") 
