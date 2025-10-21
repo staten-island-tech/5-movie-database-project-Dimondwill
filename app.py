@@ -18,8 +18,9 @@ for i in range (len(data)):
     if(data[i]['title']) == titl:
         print({data[i]['title']})'''
 
-def genre(x, y):
+def genre(x):
     for i in range (len(data)):
-        if x in (data[i]["genres"]) and y in (data[i]["genres"]):
+        x = []
+        if x in (data[i]["genres"]) :
             print({data[i]['title']})
-genre("Spy", "Comedy") 
+genre("Drama", "Horror", "Supernatural", "historical") 
