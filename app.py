@@ -19,8 +19,7 @@ for i in range (len(data)):
         print({data[i]['title']})'''
 
 def genre(x):
-    for i in range (len(data)):
-        x = []
-        if x in (data[i]["genres"]) :
-            print({data[i]['title']})
-genre("Drama", "Horror", "Supernatural", "historical") 
+    for i in range(len(data)):
+        if x in (data[i]["genres"]):
+            print(data[i]['title'])
+genre("Drama") 
